@@ -10,7 +10,7 @@ export const GET: APIRoute = async ({ params, request }) => {
   if (slug) {
     const post = await getEntry('blog', slug);
     if (!post) {
-      return new Response(JSON.stringify({ error: `Post ${slug} not found`}), {
+      return new Response(JSON.stringify({ error: `Post ${slug} not foundn`}), {
         status: 404,
         headers: { 'Content-Type': 'application/json' },
       });

@@ -1,4 +1,4 @@
-import type { APIRoute, GetStaticPaths } from 'astro';
+import type { APIRoute } from 'astro';
 import { getEntry } from 'astro:content';
 export const prerender = false;
 
